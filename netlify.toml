@@ -1,0 +1,10 @@
+[build]
+  command = "echo 'Netlify proxy build'"
+  publish = "netlify"
+
+[[redirects]]
+  from = "/*"
+  to = "http://5.181.178.198/:splat"
+  status = 200
+  force = true
+
